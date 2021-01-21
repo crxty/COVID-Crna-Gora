@@ -1,0 +1,42 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000;
+}
+h1,h2,p {
+    color: aliceblue;
+}
+h1 {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+.stats {
+    margin: 0 auto;
+    width: 500px;
+    padding: 5px 0;
+}
+#date {
+    /* color: chartreuse; */
+    color: aqua;
+}
+#newInfected {
+    color: yellow;
+}
+#newRecovered {
+    color: lime;
+}
+#newDead {
+    color: darkred;
+}
+.calculations {
+    margin: 0 auto;
+    width: 500px;
+    padding: 5px 0;
+}
+#estInfected {
+    color: yellow;
+}
+#estDead {
+    color:darkred;
+}
