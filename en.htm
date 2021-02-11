@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='style.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID Montenegro</title>
+</head>
+<body>
+    <section class="shapka">
+        <a href="index.htm" class="switcher">Crnogorska verzija</a>
+        <h1>COVID-19 Calculator</h1>
+        <p class="credit"><a href="https://github.com/crxty">crxty</a>Coded by </p>
+    </section>
+    <div class="stats">
+        <p style="font-size:x-large;">Today is <span id="date"></span></p>
+        <h4>New cases 
+            <input class="input_style" type="text" placeholder="Enter here" id="newInfectedInput">
+            </h4>
+        <h4>New recoveries 
+            <input class="input_style" type="text" placeholder="Enter here" id="newRecoveredInput">
+        <h4>New deaths 
+            <input class="input_style" type="text" placeholder="Enter here" id="newDeadInput"></h4>
+        <h4>Currently sick 
+            <input class="input_style" type="text" placeholder="Enter here" id="allInfectInput"></h4>
+            <div class="button">
+                <button id="trigger" class="button_style"  type="button">Calculate</button>
+            </div>
+        <p>For official information regarding COVID-19, visit <a class='ijz' href="https://www.ijzcg.me">IJZ</a></p>
+        <div id="bad">
+            <p>According to calculations, taking in account the grwoth tendency of new cases, Montenegro has <span id='estInfected'></span> day(s) left until absolute infection.</p>
+            <p>And <span id='estDead'> </span> day(s) until absolute extinction of it's population.</p>
+        </div>
+        <div id="good">
+            <p>According to calculations, Montenegro has <span id='estRecov'></span> day(s) left until complete recovery of active cases.</p> 
+        </div>
+    </div>
+    <script src='script.js'>
+    </script>
+</body>
+</html>

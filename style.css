@@ -10,8 +10,14 @@ a {
 }
 .shapka {
     text-align: justify;
-    margin: 47vh auto;
+    margin: 25vh auto;
     width: fit-content;
+}
+.switcher:hover {
+    color: red;
+}
+.switcher:active {
+    color: brown;
 }
 .credit {
     display: flex;
@@ -26,27 +32,41 @@ a {
 .credit a:active {
     color: brown;
 }
+.stats {
+    margin: 0 auto;
+    width: fit-content;
+    padding: 5px 0;
+}
 .input_style {
     background-color: black;
     border:none;
     caret-color: blue;
     color: cadetblue;
 }
+.button {
+    display: flex;
+    justify-content:center;
+}
 .button_style {
+    width: 6vw;
     background-color: black;
+    border: 1px solid darkgray;
     color: darkgray;
-    border: none;
 }
 .button_style:hover {
-    border: 1px solid darkgray;
-    transition: 2s;
-    box-shadow: 0px 0px 116px -80px rgba(255,255,255,1);
+    box-shadow: 0px 0px 20px 0px rgba(255,255,255,1);
+    transition: 1s;
 }
-.stats {
-    margin: 0 auto;
-    width: fit-content;
-    padding: 5px 0;
+.ijz {
+    color: burlywood;
 }
+.ijz:hover {
+    color: red;
+}
+.ijz:active {
+    color: brown;
+}
+
 #date {
     /* color: chartreuse; */
     color: aqua;

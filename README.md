@@ -7,6 +7,7 @@
 -Cool animations
 -Responsive desing
 -Adaptive calculations based on postivie/negative ratio
+-English translation
 # Versions
 V.1 //23.11.2020//
 -Inital version 
@@ -16,4 +17,6 @@ V.1.1 //21.01.2021//
 V.2 //11.02.2021//
 -Adaptive calculations
 -User input
+V.2.1. //11.02.2021//
+-English language added
 

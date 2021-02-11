@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sr">
 <head>
     <link href='style.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -10,9 +10,9 @@
 </head>
 <body>
     <section class="shapka">
+        <a href="en.htm" class="switcher">English version</a>
         <h1>COVID-19 Kalkulator</h1>
         <p class="credit"><a href="https://github.com/crxty">crxty</a>Coded by </p>
-        <!--img src="giph_V1.gif" alt="scroll chevron"-->
     </section>
     <div class="stats">
         <p style="font-size:x-large;">Danas je <span id="date"></span></p>
@@ -25,8 +25,10 @@
             <input class="input_style" type="text" placeholder="Unesi tu" id="newDeadInput"></h4>
         <h4>Trenutno oboljelih 
             <input class="input_style" type="text" placeholder="Unesi tu" id="allInfectInput"></h4>
-            <button id="trigger" class="button_style"  type="button">Izracunaj</button>
-        <p>Podaci o trenutnoj sitauaciji možete preuzeti sa zvanicnog sajta <a href="https://www.ijzcg.me">IJZ</a></p>
+            <div class="button">
+                <button id="trigger" class="button_style"  type="button">Izracunaj</button>
+            </div>
+        <p>Podaci o trenutnoj sitauaciji možete preuzeti sa zvanicnog sajta <a class='ijz' href="https://www.ijzcg.me">IJZ</a></p>
         <div id="bad">
             <p>Prema kalkulacijama, uzimajući u obzir tendenciju rasta novih slucajeva, Crnoj Gori je ostalo <span id='estInfected'></span> dana do potpunog inficiranja stanovništva.</p>
             <p>I <span id='estDead'> </span> dana do izumiranja stanovništva.</p>
