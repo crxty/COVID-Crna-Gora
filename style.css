@@ -1,24 +1,61 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'IBM Plex Sans';
     background-color: #000000;
 }
-h1,h2,p {
+h1,h4,p,a {
     color: aliceblue;
-}
-h1 {
-    text-align: center;
 }
 a {
     text-decoration: none;
 }
+.shapka {
+    text-align: justify;
+    margin: 47vh auto;
+    width: fit-content;
+}
+.credit {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.credit a:visited {
+    color: aliceblue;
+}
+.credit a:hover {
+    color:red;
+}
+.credit a:active {
+    color: brown;
+}
+.input_style {
+    background-color: black;
+    border:none;
+    caret-color: blue;
+    color: cadetblue;
+}
+.button_style {
+    background-color: black;
+    color: darkgray;
+    border: none;
+}
+.button_style:hover {
+    border: 1px solid darkgray;
+    transition: 2s;
+    box-shadow: 0px 0px 116px -80px rgba(255,255,255,1);
+}
 .stats {
     margin: 0 auto;
-    width: 500px;
+    width: fit-content;
     padding: 5px 0;
 }
 #date {
     /* color: chartreuse; */
     color: aqua;
+}
+#bad {
+    display: none;
+}
+#good {
+    display: none;
 }
 #newInfected {
     color: yellow;
@@ -29,14 +66,12 @@ a {
 #newDead {
     color: darkred;
 }
-.calculations {
-    margin: 0 auto;
-    width: 500px;
-    padding: 5px 0;
-}
 #estInfected {
     color: yellow;
 }
 #estDead {
     color:darkred;
+}
+#estRecov {
+    color: lime;
 }

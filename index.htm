@@ -3,27 +3,37 @@
 <head>
     <link href='style.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COVID Crna Gora</title>
 </head>
 <body>
-    <h1>Poslednji podaci o COVID-19 u Crnoj Gori</h1>
+    <section class="shapka">
+        <h1>COVID-19 Kalkulator</h1>
+        <p class="credit"><a href="https://github.com/crxty">crxty</a>Coded by </p>
+        <!--img src="giph_V1.gif" alt="scroll chevron"-->
+    </section>
     <div class="stats">
-        <h2 id="date">
-        <h2>Broj novih slucajeva</h2>
-        <h2 id="newInfected"></h2>
-        <h2>Broj oporavljenih</h2>
-        <h2 id='newRecovered'></h2>
-        <h2>Broj umrlih</h2>
-        <h2 id='newDead'></h2>
-        <p>Podaci su preuzeti sa zvanicnog sajta <a href="https://www.ijzcg.me">IJZ</a></p>
-    </div>
-    <div class="calculations">
-        <p>Prema kalkulacijama, uzimajuci u obzir tendenciju rasta novih slucajeva, Crnoj Gori je ostalo <span id='estInfected'></span> dana do potpunog inficiranja stanovnistva.</p>
-        <P>I <span id='estDead'> </span> dana do izumiranja stanovnistva.</p>
-    </div>
+        <p style="font-size:x-large;">Danas je <span id="date"></span></p>
+        <h4>Broj novih slučajeva 
+            <input class="input_style" type="text" placeholder="Unesi tu" id="newInfectedInput">
+            </h4>
+        <h4>Broj oporavljenih 
+            <input class="input_style" type="text" placeholder="Unesi tu" id="newRecoveredInput">
+        <h4>Broj umrlih 
+            <input class="input_style" type="text" placeholder="Unesi tu" id="newDeadInput"></h4>
+        <h4>Trenutno oboljelih 
+            <input class="input_style" type="text" placeholder="Unesi tu" id="allInfectInput"></h4>
+            <button id="trigger" class="button_style"  type="button">Izracunaj</button>
+        <p>Podaci o trenutnoj sitauaciji možete preuzeti sa zvanicnog sajta <a href="https://www.ijzcg.me">IJZ</a></p>
+        <div id="bad">
+            <p>Prema kalkulacijama, uzimajući u obzir tendenciju rasta novih slucajeva, Crnoj Gori je ostalo <span id='estInfected'></span> dana do potpunog inficiranja stanovništva.</p>
+            <p>I <span id='estDead'> </span> dana do izumiranja stanovništva.</p>
+        </div>
+        <div id="good">
+            <p>Prema kalkulacijama, Crnoj Gori je ostalo <span id='estRecov'></span> dana do potpunog oporavka oboljelih.</p> 
+        </div>
     </div>
     <script src='script.js'>
     </script>
